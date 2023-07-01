@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  onload="showmodal()">
+    <h1>Hello, World!</h1>
+ <div id="modalbox">
+    <img src="images/cookie.png" alt="cookie-image" class="cookies">
+    <p>We use cookies to optimize user experience.</p>
+    <button type="submit" onclick="closeModal()">Accept</button>
+    <img src="images/x-lg.svg" alt="close" class="close-icon" onclick="closeModal()">
+ </div>
+
+ <script>
+    let modalBox = document.getElementById("modalbox");
+
+    function showmodal() {
+        setTimeout(() => {
+            modalbox.style.display = "block"
+        }, 1000);
+    }
+
+    function closeModal() {
+        modalBox.style.display = "none";
+    }
+   
+ </script>
+</body>
+</html>                             
